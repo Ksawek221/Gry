@@ -112,4 +112,4 @@ if odpowiedz == "3":
 
 #w samolocie
 print(nazwa_postaci + ", znajduje..")
-print("1. ")
+print("1. Jedzenie ")
