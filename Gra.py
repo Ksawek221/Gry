@@ -118,4 +118,4 @@ print(nazwa_postaci + ", bierze przedmioty i idzie dalej do wyspy")
 
 print("===========")
 print("DZIEN 2")
-print("===========")    
+print("===========")
