@@ -1,9 +1,6 @@
 #importy
 import time
 
-
-#szybkie info do usuiecia! zaczęto tworzenie 15.09.2023
-
 #intro
 print("===========================================")
 print("Witam w grze Wybieraj aby przetrwac")
@@ -24,7 +21,10 @@ if wybor_pomocy == 1:
     print("dobrze, oto informacje o grze:")
     time.sleep(1)
     print("Autor: Ksawery")
-    print("Czas tworzenia gry: ") #DO WYPEŁNIENIA!!!
+    print("Czas tworzenia gry: ") #DO WYPEŁNIENIA!!! zaczęto tworzenie 15.09.2023
+    print("Info o grze: To jest PROTOTYP tej gry, wiec kilka rzeczy mogą byc błedne"
+          " warto pamiec, ze trzeba sie kilka razy zastanowic, zanim sie dokona wyboru"
+          " bo zły wybór wywala z gry!")
     print()
     pytanie = input("Gotowy do gry? (tak,nie): ")
     if pytanie == "tak":
@@ -114,8 +114,61 @@ if odpowiedz == "3":
 print(nazwa_postaci + ", znajduje..")
 print("1. Jedzenie")
 print("2. Nóż")
+time.sleep(1)
 print(nazwa_postaci + ", bierze przedmioty i idzie dalej do wyspy")
-
+print()
 print("===========")
 print("DZIEN 2")
 print("===========")
+time.sleep(3)
+print()
+print(nazwa_postaci + ", wstal(-a) glodny(-a), masz wybor")
+time.sleep(2)
+print()
+print("======================================")
+print("1. Iśc szukac i zabic zwierzyne")
+print("2. Znalesc jakies owoce")
+print("3. Jesc trawe")
+print("======================================")
+odpowiedz = input("Co wybierasz?: ")
+#funkcja if
+if odpowiedz == "1":
+    print(nazwa_postaci + ", poszedl szukac zwierzyny....")
+    print("zwierzyna zabila " + nazwa_postaci + ", umierasz!")
+    time.sleep(4)
+    quit()
+elif odpowiedz == "2":
+    print(nazwa_postaci + ", znalazl(-a) kilka jablek i malin.")
+    print("Brawo " + nazwa_gracza + ", zaszleś(-aś) daleko, teraz bedą coraz gorsze wybory!")
+elif odpowiedz == "3":
+    print(nazwa_postaci + ", zatrul(-a) sie trawą, odpadasz!")
+    time.sleep(2)
+    quit()
+print()
+print(nazwa_postaci + ", sie najadl(-a), lecz " + nazwa_postaci)
+print("Probuje sie wydostac z wyspy, bo wie ze tam nie przetrwa zbyt długo, masz wybór")
+print("======================================")
+print("1. Iśc ciac drzewo na łódke")
+print("2. zacząc plywac w strone słonca")
+print("3. Zaakceptowac fakt, ze szanse na wydostaniecie sie z wyspy są małe (koniec gry)")
+print("======================================")
+print()
+odpowiedz = input("Co wybierasz?: ")
+if odpowiedz == "1":
+    print(nazwa_postaci + ", poszla ciac drzewo, przyda sie bardzo")
+elif odpowiedz == "2":
+    print(nazwa_postaci + ", myślał(-a) ze gdzies dopłynie, rekine go(-ją) zjadły...")
+    time.sleep(3)
+    quit()
+elif odpowiedz == "3":
+    print(nazwa_postaci + ", powoli umierala na wyspie")
+    print(nazwa_gracza + ", zakonczyles gre, milego dnia!")
+    time.sleep(4)
+    quit()
+print()
+print(nazwa_postaci + ", zebrała drzewo, i przeszukała wraki samolotu.")
+time.sleep(2)
+print("====================")
+print("Buduje łodke...")
+print("Prosze czekac...")
+print("=====================")
