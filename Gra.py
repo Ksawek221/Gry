@@ -54,10 +54,6 @@ print("Bardzo fajnie!")
 
 #część gry 1
 print(nazwa_postaci + ", Chce wyruszyc na wakacje do USA, bierze samolot")
-print()
-print("============================================")
-print("1. Samolotem")
-print("============================================")
 
 #w usa.
 print()
@@ -172,3 +168,5 @@ print("====================")
 print("Buduje łodke...")
 print("Prosze czekac...")
 print("=====================")
+print()
+time.sleep(3)
